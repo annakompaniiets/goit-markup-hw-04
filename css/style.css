@@ -77,6 +77,7 @@ img {
 
 .page-header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -124,10 +125,6 @@ img {
 .contact-tools {
   display: flex;
   column-gap: 50px;
-}
-
-.contact-menu {
-  display: flex;
 }
 
 .contact-link {
@@ -276,12 +273,17 @@ img {
   column-gap: 10px;
 }
 
+.social-list-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -331,10 +333,11 @@ img {
 /*================= Portfolio =================== */
 .title-link {
   text-decoration: none;
+  display: block;
 }
 
-.work-card:hover,
-.work-card:focus {
+.title-link:hover,
+.title-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -367,22 +370,25 @@ img {
 .clients-item {
   width: 170px;
   height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .cliets-list-icon {
   fill: rgba(175, 177, 184, 1);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 
@@ -444,7 +450,7 @@ img {
 }
 
 .work-card {
-  flex-basis: calc(100% - 60px) / 3;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .work-item-wrapper {
