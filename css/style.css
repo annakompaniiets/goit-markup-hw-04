@@ -387,8 +387,7 @@ img {
   fill: rgba(175, 177, 184, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 
